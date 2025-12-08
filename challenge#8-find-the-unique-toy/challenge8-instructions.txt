@@ -1,0 +1,17 @@
+# Challenge #8: Find the Unique Toy
+
+**Objective:** Write a function that identifies the first letter in a given toy's name that does not repeat.
+
+## Rules
+1.  **Input:** A string (`toy`).
+2.  **Case Insensitivity:** When counting letters, ignore case (e.g., 'A' and 'a' vary as the same letter).
+3.  **Return:** The *first* unique letter, in its *original* case.
+4.  **No Match:** If all letters repeat, return an empty string `""`.
+
+## Examples
+```javascript
+findUniqueToy('Gift')      // 'G' (Non-repeating)
+findUniqueToy('sS')        // ''  ('s' repeats as 'S')
+findUniqueToy('reindeeR')  // 'i' ('r' and 'R' match, 'e' matches, 'i' is unique)
+findUniqueToy('z')         // 'z'
+```
